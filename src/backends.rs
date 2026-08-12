@@ -103,6 +103,7 @@ cfg_if! {
     } else if #[cfg(any(
         target_os = "android",
         target_os = "linux",
+        target_os = "onyx",
         target_os = "dragonfly",
         target_os = "freebsd",
         target_os = "hurd",
