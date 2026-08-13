@@ -255,6 +255,7 @@ cfg_if! {
         // include the Nintendo Switch (which is target_arch = "aarch64").
         all(target_os = "horizon", target_arch = "arm"),
         target_os = "cygwin",
+        target_os = "onyx"
     ))] {
         mod util_libc;
         #[path = "getrandom.rs"] mod imp;
